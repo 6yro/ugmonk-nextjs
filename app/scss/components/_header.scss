@@ -89,5 +89,17 @@
         }
       }
     }
+
+    @media (max-width: 340px) {
+      .menu {
+        &__products-item {
+          margin: 0 8px;
+        }
+
+        &__search-item {
+          padding: 0 6px;
+        }
+      }
+    }
   }
 }
