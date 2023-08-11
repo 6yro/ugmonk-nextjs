@@ -27,14 +27,16 @@
     display: flex;
     flex-direction: column;
 
-    &:not(:first-child) {
-      margin-left: 116px;
+    &:first-child {
+      margin-right: 10px;
     }
   }
 
-  &__items-row:not(:last-child) {
+  &__items-row {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
+    width: 100%;
   }
 
   @media (max-width: 1110px) {

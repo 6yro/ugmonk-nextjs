@@ -139,14 +139,12 @@ const Home: React.FC<HomeProps> = ({ startProducts, categoriesList }) => {
                 </Link>
               </div>
             </div>
-            <div className="mission__items-row">
-              <div className="mission__item">
-                <Image src={missionObjectsImg} alt="" />
-                <Link href="/" className="link-btn link-btn--large">
-                  <p>Shop Objects</p>
-                  <span>→</span>
-                </Link>
-              </div>
+            <div className="mission__item">
+              <Image src={missionObjectsImg} alt="" />
+              <Link href="/" className="link-btn link-btn--large">
+                <p>Shop Objects</p>
+                <span>→</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -172,15 +170,20 @@ const Home: React.FC<HomeProps> = ({ startProducts, categoriesList }) => {
       </section>
 
       <section className="history">
-        <div className="history__text">
-          <h2>
-            A design studio in Downingtown, PA, creating and curating products
-            that combine form & function
-          </h2>
-          <Link href="/" className="link-btn link-btn--medium link-btn--white">
-            <p>Read Our Story</p>
-            <span>→</span>
-          </Link>
+        <div className="container">
+          <div className="history__text">
+            <h2>
+              A design studio in Downingtown, PA, creating and curating products
+              that combine form & function
+            </h2>
+            <Link
+              href="/"
+              className="link-btn link-btn--medium link-btn--white"
+            >
+              <p>Read Our Story</p>
+              <span>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

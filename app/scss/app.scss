@@ -55,6 +55,10 @@
     width: fit-content;
     border-bottom: 1px solid #1a1a1a;
     padding-right: 20px;
+
+    @media screen and (max-width: 1040px) {
+      margin-bottom: 0;
+    }
   }
 
   &--white {
