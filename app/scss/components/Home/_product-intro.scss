@@ -1,0 +1,23 @@
+.product-intro {
+  background-image: url("../../../assets/img/product-intro__background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+
+  &__text {
+    position: absolute;
+    bottom: 8px;
+
+    h2 {
+      margin: 2px 0;
+      font-size: 18px;
+      color: #fff;
+      line-height: 28px;
+    }
+  }
+
+  @media (max-width: 660px) {
+    height: 40vh;
+  }
+}

@@ -1,0 +1,130 @@
+.cart {
+  background-color: #ced3ca;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 60px;
+
+    &--empty {
+      padding: 60px 0;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        max-width: fit-content;
+        font-size: 42px;
+        line-height: 35px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 28px;
+        max-width: 358px;
+        margin-bottom: 32px;
+      }
+
+      img {
+        max-width: 314px;
+        width: 100%;
+        max-height: 320px;
+        height: 100%;
+        margin-bottom: 48px;
+      }
+    }
+  }
+  &__block {
+    background-color: #fff;
+
+    &--products {
+      padding: 40px 25px;
+    }
+
+    &--purchase {
+      padding: 40px 39px;
+      width: 399px;
+    }
+  }
+
+  &__title {
+    height: 60px;
+    padding: 0 16px;
+    text-align: center;
+    background-color: #6a6663;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    hr {
+      align-self: stretch;
+      background-color: #fff;
+      border: 1px solid #fff;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+
+  &__price {
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__purchase-line {
+    border: 1px solid #808080;
+    margin-bottom: 15px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1052px) {
+    &__inner {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__block {
+      &--products {
+        padding: 30px 25px;
+        border-radius: 20px;
+      }
+
+      &--purchase {
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 474px) {
+    &__inner {
+      padding-bottom: 30px;
+    }
+
+    &__block {
+      &--purchase {
+        width: 90%;
+        padding: 20px;
+      }
+
+      &--products {
+        padding: 15px;
+      }
+    }
+  }
+}
