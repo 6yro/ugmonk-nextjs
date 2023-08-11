@@ -31,7 +31,7 @@ export const CartProductCard: React.FC<CartProduct> = ({
         ></Image>
         <div className="cart-product-card__text">
           <h3 className="cart-product-card__title">
-            {title} <span>({subtitle})</span>
+            {title} <span>{subtitle && `(${subtitle})`}</span>
           </h3>
           <p className="cart-product-card__descr">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
